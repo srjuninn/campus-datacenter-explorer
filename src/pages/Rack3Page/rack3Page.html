@@ -5,20 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rack 3 - AD1</title>
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../styles/global.css">
+  <!-- Links -->
+  <link rel="stylesheet" href="/src/styles/global.css">
   <link rel="stylesheet" href="/src/pages/Rack3Page/rack3Page.css" />
-  <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
+  <!-- Scripts links -->
   <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
   <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
   <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
   <script src="/src/pages/Rack3Page/js/popUp.js" defer></script>
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Ryan -->
   <div id="topo" class="scrollLink"></div>
   <header class="noGap">
     <div class="imagesWrap">
@@ -33,7 +36,7 @@
         <li><a href="../../../index.html">Home</a></li>
         <li><a href="../fibraPage/index.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
         <li><a href="../Rack2Page/rack02.html">Rack 2 - VMware ESXi e pfSense</a></li>
-        <li><a href="#">Rack 3 - Active Directory (AD) e DNS</a></li>
+        <li><a href="#" class="active">Rack 3 - Active Directory (AD) e DNS</a></li>
         <li><a href="../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
         <li><a href="../Rack5Page/rack5Page.html">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
         <li><a href="">Rack 6 - Central de Câmeras e GitLab</a></li>
@@ -43,13 +46,10 @@
   <!-- <li><a href="#adService">Rack 1 - Armazenamento, Apache e FTP</a></li>
   <li><a href="#adDocumentation">Rack 2 - VMware ESXi e pfSense</a></li>
   <li><a href="#footer">Rack 3 - Active Directory (AD) e DNS</a></li> -->
-  <!-- Nikollas -->
   <main>
     <h1 class="titulo">Rack AD1</h1>
 
     <div class="imgPopUp">
-      <!-- <img src="/src/assets/images/ad1RackIlustration.svg" alt="Rack AD1 ilustration" class="banner" /> -->
-
       <!-- Hotspots clicáveis -->
       <div class="imgService" data-popup="0"></div>
       <div class="imgService" data-popup="1"></div>
@@ -59,24 +59,22 @@
       <!-- Pop-ups -->
       <div class="popUp">
         <p>Serviço 1</p>
-        <p>esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do
-          serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve
-          descrição do serviço 1</p>
+        <p>Este pop-up é uma breve descrição sobre o serviço 1</p>
         <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
       </div>
       <div class="popUp">
         <p>Serviço 2</p>
-        <p>esta é uma breve descrição do serviço 2esta é uma breve descrição do serviço 2</p>
+        <p>Este pop-up é uma breve descrição sobre o serviço 2</p>
         <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
       </div>
       <div class="popUp">
         <p>Serviço 3</p>
-        <p>esta é uma breve descrição do serviço 3</p>
+        <p>Este pop-up é uma breve descrição sobre o serviço 3</p>
         <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
       </div>
       <div class="popUp">
         <p>Serviço 4</p>
-        <p>esta é uma breve descrição do serviço 4</p>
+        <p>Este pop-up é uma breve descrição sobre o serviço 4</p>
         <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
       </div>
     </div>
@@ -148,8 +146,7 @@
       <a href="#adDocumentation" class="doc-link">veja a documentação técnica</a>
     </section>
   </main>
-  <!-- Ryan was here bro -->
-  <!-- Links para os serviços -->
+  <!-- Links de sroll para os serviços -->
   <div id="adService" class="scrollLink"></div>
   <div id="vmwareService" class="scrollLink"></div>
   <div id="dnsService" class="scrollLink"></div>
@@ -160,8 +157,8 @@
     <div class="service-documentation">
       <div class="dropdown">
         <h3>Ad</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -171,7 +168,8 @@
           aplicar políticas de segurança e facilitar a administração de
           grandes ambientes corporativos.
         </p>
-        <img src="/src/assets/images/activeDirectoryHeroImage.svg" alt="hero image do serviço active diretory" />
+        <img src="/src/assets/images/activeDirectoryHeroImage.svg" alt="hero image do serviço active diretory"
+          loading="lazy" />
         <a href="#adDocumentation">Veja a documentação técnica</a>
       </div>
     </div>
@@ -179,8 +177,8 @@
     <div class="service-documentation">
       <div class="dropdown">
         <h3>VMWare</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -189,7 +187,7 @@
           recursos de hardware, isolar ambientes de teste e produção e
           aumentar a flexibilidade da infraestrutura de TI.
         </p>
-        <img src="/src/assets/images/vmwareHeroImage.svg" alt="hero image do serviço vmware" />
+        <img src="/src/assets/images/vmwareHeroImage.svg" alt="hero image do serviço vmware" loading="lazy" />
         <a href="#vmwareDocumentation">Veja a documentação técnica</a>
       </div>
     </div>
@@ -197,8 +195,8 @@
     <div class="service-documentation">
       <div class="dropdown">
         <h3>DNS</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -208,7 +206,7 @@
           para navegação na web, autenticação de serviços e comunicação entre
           dispositivos.
         </p>
-        <img src="/src/assets/images/dnsHeroImage.svg" alt="hero image do serviço dns" />
+        <img src="/src/assets/images/dnsHeroImage.svg" alt="hero image do serviço dns" loading="lazy" />
         <a href="#dnsDocumentation">Veja a documentação técnica</a>
       </div>
     </div>
@@ -216,8 +214,8 @@
     <div class="service-documentation">
       <div class="dropdown">
         <h3>Arduino</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -231,7 +229,7 @@
           solução acessível e eficiente para controle climático em
           laboratórios, data centers ou ambientes industriais.
         </p>
-        <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno" />
+        <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno" loading="lazy" />
         <a href="#arduinoDocumentation">Veja a documentação técnica</a>
       </div>
     </div>
@@ -248,8 +246,8 @@
     <div class="service-documentation">
       <div class="dropdown">
         <h3>Ad</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -264,8 +262,8 @@
       <!-- Documentação VMWare -->
       <div class="dropdown">
         <h3>VMWARE</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -287,8 +285,8 @@
       <!-- Documentação DNS -->
       <div class="dropdown">
         <h3>DNS</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -307,8 +305,8 @@
       <!-- Documentação Arduino -->
       <div class="dropdown">
         <h3>Arduíno</h3>
-        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
+        <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+        <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
       </div>
       <div class="serviceContent">
         <p>
@@ -341,18 +339,19 @@
       <nav class="contatos">
         <h3>Contatos</h3>
         <div class="socialMedias">
-          <a href="https://github.com/professor-correa/campus-datacenter-explorer"><img
-              src="/src/assets/icons/githubRack3.svg" alt="logo do github" /></a>
-          <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu"><img
-              src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram" /></a>
-          <a href=""><img src="/src/assets/icons/figmaRack3.svg" alt="logo do figma" /></a>
-          <a href="https://www.linkedin.com/school/senaisp-suico/"><img src="/src/assets/icons/linkedinRack3.svg"
-              alt="logo do linkedin" /></a>
+          <a href="https://github.com/professor-correa/campus-datacenter-explorer" target="_blank"><img
+              src="/src/assets/icons/githubRack3.svg" alt="logo do github" loading="lazy" /></a>
+          <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu" target="_blank"><img
+              src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram" loading="lazy" /></a>
+          <a href="https://www.figma.com/design/LOPdanvag4cYtjxpLDYfoK/DataCenter---Design-System?node-id=1-3&t=sdteNx2KuhpGrY22-1"
+            target="_blank"><img src="/src/assets/icons/figmaRack3.svg" alt="logo do figma" loading="lazy" /></a>
+          <a href="https://www.linkedin.com/school/senaisp-suico/" target="_blank"><img
+              src="/src/assets/icons/linkedinRack3.svg" alt="logo do linkedin" loading="lazy" /></a>
         </div>
       </nav>
       <div class="acesseTambem">
         <h4>Acesse Também</h4>
-        <a href="https://sp.senai.br/unidade/suicobrasileira/">Senai suiço-brasileira</a>
+        <a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">Senai suiço-brasileira</a>
       </div>
     </div>
   </footer>
