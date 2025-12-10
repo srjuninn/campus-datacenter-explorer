@@ -1,6 +1,7 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 #linuxService,
 #zabixService,
 #siemService,
@@ -9,7 +10,7 @@ html {
 #zabixDoc,
 #siemDoc,
 #arduinoDoc {
-    scroll-margin-top: 80px;
+  scroll-margin-top: 80px;
 }
 
 /* ---------- Início do Header ---------- */
@@ -17,62 +18,62 @@ html {
 /* ---------- Mobiel first ---------- */
 
 header {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 30px;
-    gap: 30px;
-    width: 100%;
-    background-color: var(--red-v700);
-    transition: gap 0.4s ease;
-    z-index: 1001;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 30px;
+  gap: 30px;
+  width: 100%;
+  background-color: var(--red-v700);
+  transition: gap 0.4s ease;
+  z-index: 1001;
 }
 
 header.noGap {
-    gap: 0px;
+  gap: 0px;
 }
 
 header>.imagesWrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    transition: gap 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: gap 0.4s ease;
 }
 
 .imagesWrap>button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 #links {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
 #links.open {
-    max-height: 350px;
+  max-height: 350px;
 }
 
 nav>ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 nav>ul>li>a {
-    font-size: 1rem;
-    color: var(--grey-c100);
-    text-decoration: none;
+  font-size: 1rem;
+  color: var(--grey-c100);
+  text-decoration: none;
 }
 
 /* ---------- Fim do Header ---------- */
@@ -91,104 +92,104 @@ main {
 /* Este é o css do pop-up e de como que ele ficaria estilizado dentrodas
 telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
 .imgPopUp {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 800px;
-    height: 100%;
-    aspect-ratio: 619/583.24;
-    background-size: contain;
-    background-image: url(/src/assets/images/ad1RackIlustration.svg);
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  aspect-ratio: 619/583.24;
+  background-size: contain;
+  background-image: url(/src/assets/images/ad1RackIlustration.svg);
+  border-radius: 8px;
 }
 
 /* Hotspots clicáveis */
 .imgService {
-    position: relative;
-    margin: 8% 0 0 8%;
-    border: 1px solid transparent;
-    z-index: 999;
-    cursor: pointer;
+  position: relative;
+  margin: 8% 0 0 8%;
+  border: 1px solid transparent;
+  z-index: 999;
+  cursor: pointer;
 }
 
 .imgService:nth-of-type(1) {
-    top: 2.5%;
-    left: 0.8%;
-    width: 35%;
-    height: 10%;
+  top: 2.5%;
+  left: 0.8%;
+  width: 35%;
+  height: 10%;
 }
 
 .imgService:nth-of-type(2) {
-    margin-top: 3.5%;
-    top: 0.3%;
-    left: 1.8%;
-    width: 33%;
-    height: 13%;
+  margin-top: 3.5%;
+  top: 0.3%;
+  left: 1.8%;
+  width: 33%;
+  height: 13%;
 }
 
 .imgService:nth-of-type(3) {
-    margin-top: 0.2%;
-    top: 1%;
-    left: 3%;
-    width: 30%;
-    height: 18%;
+  margin-top: 0.2%;
+  top: 1%;
+  left: 3%;
+  width: 30%;
+  height: 18%;
 }
 
 .imgService:nth-of-type(4) {
-    margin-top: 0.5%;
-    top: 3%;
-    left: 2%;
-    width: 32%;
-    height: 15%;
+  margin-top: 0.5%;
+  top: 3%;
+  left: 2%;
+  width: 32%;
+  height: 15%;
 }
 
 .popUp {
-    z-index: 1000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.95);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    gap: 20px;
-    border-radius: 15px;
-    background-color: var(--red-v800);
-    width: 75%;
-    text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: var(--red-v800);
+  width: 75%;
+  text-align: center;
 }
 
 .popUp.active {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    pointer-events: auto;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
 }
 
 .popUp>p:nth-child(1) {
-    font-size: 24px;
-    color: var(--grey-c100);
-    font-weight: 400;
+  font-size: 24px;
+  color: var(--grey-c100);
+  font-weight: 400;
 }
 
 .popUp>p:nth-child(2) {
-    font-size: 18px;
-    color: var(--grey-c200);
-    font-weight: 400;
+  font-size: 18px;
+  color: var(--grey-c200);
+  font-weight: 400;
 }
 
 .popUp>img.closeBtn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
 
 
@@ -227,7 +228,7 @@ telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
 
 .conteine-rack5 h2 {
   margin-bottom: 30px;
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 600;
   text-align: center;
 }
@@ -235,12 +236,14 @@ telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
 .conteine-rack5 p {
   color: var(--grey-c900);
   font-size: 18px;
-  
+
 }
+
 .conteine-rack5 li {
   color: var(--grey-c900);
   font-size: 18px;
 }
+
 .lists {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -389,158 +392,311 @@ telas Copiem tudo o que está aqui e colem no css de vocês, se forem usar. */
    Main / Service Styles
    ========================================= */
 .services-documentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
 }
 
 .services-documentation>h2 {
-    padding-top: 20px;
-    width: 100%;
-    border-top: 2px solid var(--grey-c500);
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--grey-c1000);
+  padding-top: 20px;
+  width: 100%;
+  border-top: 2px solid var(--grey-c500);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--grey-c1000);
 }
 
 .service-documentation {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .dropdown {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
 }
 
 .dropdown>img {
-    max-height: 1200px;
+  max-height: 1200px;
 }
 
 .dropdown>h3 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--grey-c1000);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--grey-c1000);
 }
 
 img.none {
-    display: none;
+  display: none;
 }
 
 .serviceContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
 
 }
 
 .serviceContent.open {
-    max-height: 2000px;
-    opacity: 1;
+  max-height: 2000px;
+  opacity: 1;
 }
 
 .serviceContent>p {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--grey-c900);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-c900);
 }
 
 .serviceContent>img {
-    align-self: center;
-    max-width: 247px;
+  align-self: center;
+  max-width: 247px;
 }
 
 .serviceContent:last-child {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .serviceContent>a {
-    align-self: flex-end;
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--grey-c700);
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c700);
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 24px;
-    gap: 30px;
-    background-color: var(--red-v700);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 30px;
+  background-color: var(--red-v700);
 }
 
 footer>.backInPage>h2 {
-    margin-bottom: 12px;
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--grey-c100);
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--grey-c100);
 }
 
 footer>nav>ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 footer>nav>ul>li>a {
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--grey-c100);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c100);
 }
 
 .contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.contatos>h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--grey-c100);
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+footer>.contact>.acesseTambem>h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--grey-c100);
+}
+
+footer>.contact>.acesseTambem>a {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--grey-c100);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .conteine-title {
+    font-size: 24px;
+  }
+
+  .conteine-rack5 p,
+  .conteine-rack5 li {
+    font-size: 24px;
+  }
+
+  .services-documentation>h2 {
+    font-size: 48px;
+  }
+
+  .dropdown>h3 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+  }
+
+  .serviceContent>p {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-c900);
+  }
+
+  .serviceContent>img {
+    max-width: 686px;
+  }
+
+  .serviceContent>a {
+    font-size: 24px;
+  }
+
+  footer>.backInPage>h2 {
+    font-size: 48px;
+  }
+
+  footer>.backInPage>nav>ul>li>a {
+    font-size: 24px;
+    color: var(--grey-c100);
+    font-weight: 300;
+  }
+
+  .contatos>h3 {
+    font-size: 36px;
+  }
+
+  footer>.contact>.acesseTambem>h4 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .acesseTambem {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 12px;
-}
+  }
 
-.contatos>h3 {
-    font-size: 24px;
-    font-weight: 600;
+  footer>.contact>.acesseTambem>a {
+    font-size: 20px;
     color: var(--grey-c100);
+    font-weight: 300;
+    text-align: center;
+  }
 }
 
-.socialMedias {
+@media (min-width: 1280px) {
+  .whas_is h1 {
+    font-size: 96px;
+    font-weight: 700;
+  }
+
+  .conteine-rack5 h2 {
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+  }
+
+  .conteine-rack5 p,
+  .conteine-rack5 li {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-c700);
+  }
+
+  .conteine-rack5 .conteiner-link a {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey-c900);
+  }
+
+  .dropdown>h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-c1000);
+  }
+
+  .serviceContent>p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--grey-c700);
+  }
+
+  .serviceContent>img {
+    max-width: 800px;
+  }
+
+  .serviceContent>a {
+    font-size: 24px;
+  }
+
+  footer {
     display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: stretch;
+  }
+
+  .backInPage {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-}
+    gap: 12px;
+  }
 
-footer>.contact>.acesseTambem>h4 {
-    margin-top: 30px;
+  footer>.backInPage>h2,
+  .contatos>h3 {
     font-size: 20px;
     font-weight: 600;
     color: var(--grey-c100);
-}
+  }
 
-footer>.contact>.acesseTambem>a {
+  footer>.backInPage>nav>ul>li>a {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     color: var(--grey-c100);
-    text-decoration: underline;
-}
+  }
 
+  footer>.contact>.acesseTambem>h4 {
+    font-size: 20px;
+    color: var(--grey-c100);
+  }
+
+  footer>.contact>.acesseTambem>a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-c100);
+  }
+
+}
