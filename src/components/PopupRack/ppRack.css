@@ -25,6 +25,7 @@
     font-style: normal;
     font-weight: var(--font-weight-medium);
     line-height: 141%;
+    text-align: center;
 }
 
 .rack-button {
