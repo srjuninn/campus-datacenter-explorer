@@ -387,8 +387,8 @@ details p {
 /* padrão da navBar */
 .main-nav {
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
-  height: 0;
+  max-height: 0;
+  transition: max-height 0.35s ease-in-out;
   width: 100%;
 }
 
@@ -410,13 +410,18 @@ details p {
   display: block;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .main-nav a:hover {
   background: var(--Tons-de-Vermelho-c800);
 }
 
 .menu-open .main-nav {
-  height: auto;
+  max-height: 500px; /* ✅ anima suavemente */
 }
+
 
 /* FOOTER*/
 .site-footer {
@@ -499,4 +504,13 @@ details p {
 .menu-toggle:focus-visible {
   outline: 2px solid var(--Tons-de-Cinza-c100);
   outline-offset: 3px;
+}
+
+.footer-group > h2 > a {
+  color: var(--Tons-de-Cinza-c100);
+}
+
+.footer-links a {
+  color: var(--Tons-de-Cinza-c100);
+
 }
