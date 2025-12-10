@@ -13,6 +13,10 @@ html{
      */
 }
 
+a.active {
+    text-decoration: underline;
+}
+
 h1{
     font-size: var(--text-5xl);
     font-weight: 800;
