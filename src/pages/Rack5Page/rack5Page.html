@@ -1,45 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./rack5Page.css" />
+  <title>Rack-05</title>
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link rel="shortcut icon" href="../../assets/icons/logo-favicon.png" type="image/x-icon">
-  <title>Rack-05</title>
+  <!-- links -->
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <link rel="stylesheet" href="/src/pages/Rack5Page/rack5Page.css" />
+  <script src="/src/pages/Rack3Page/js/hamburgerMenu.js" defer></script>
+  <script src="/src/pages/Rack3Page/js/dropdown.js" defer></script>
+  <script src="/src/pages/Rack3Page/js/scroll.js" defer></script>
+  <script src="/src/pages/Rack3Page/js/popUp.js"></script>
+  <link rel="stylesheet" href="/src/components/PopUpRack3/popUp.css">
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="/src/assets/icons/logo-favicon.png" type="image/x-icon">
 </head>
 
 <body id="rack5-top">
-  <header>
-    <nav>
-      <div class="mobile-menu">
-        <a href="" class="senai-logo">
-          <img src="../../assets/icons/header-senai-icon.svg" alt="Logotipo do SENAI(voltar para a Landingpage)" />
-        </a>
-      </div>
-
-      <button class="mobile-menu-trigger" aria-label="Abrir menu de navegação">
-        <img class="icon-hamburger" src="../../assets/icons/header-hamburger-menu-icon.svg" alt="Menu hambúrguer" />
-
-        <img class="icon-close" src="../../assets/icons/header-arrow-top-icon.svg" alt="Fechar menu" />
+  <div id="topo" class="scrollLink"></div>
+  <header class="noGap">
+    <div class="imagesWrap">
+      <img src="/src/assets/icons/LogotipoSenaiRack3.svg" alt="logotipo do senai" />
+      <button id="hamburgerMenu">
+        <img id="arrowUp" src="/src/assets/icons/arrowUpHeaderRack3.svg" alt="ícone seta para cima" />
+        <img id="hamburgerIcon" src="/src/assets/icons/hamburgerMenuRack3.svg" alt="ícone menu hamburguer" />
       </button>
-
-      <ul class="nav-list">
-        <li><a href="#rack5-top">Rack 5</a></li>
-        <li><a href="#linuxService">Serviços</a></li>
-        <li><a href="#linuxDoc">Documentação Técnica</a></li>
-        <li><a href="#footer">Mais Informações</a></li>
+    </div>
+    <nav id="links">
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+        <li><a href="../fibraPage/index.html">Rack 1 - Armazenamento, Apache e FTP</a></li>
+        <li><a href="../Rack2Page/rack02.html">Rack 2 - VMware ESXi e pfSense</a></li>
+        <li><a href="#">Rack 3 - Active Directory (AD) e DNS</a></li>
+        <li><a href="../Rack4Page/Rack4Page.html">Rack 4 - AD de Leitura e DNS Secundário</a></li>
+        <li><a href="../Rack5Page/rack5Page.html" class="active">Rack 5 - Zabbix, Splunk/Wazuh e VMware ESXi</a></li>
+        <li><a href="">Rack 6 - Central de Câmeras e GitLab</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="whas_is">
       <h1>Rack 05</h1>
-      <img src="/src/assets/images/rack5-image.png" alt="" />
+      <div class="imgPopUp">
+
+        <!-- Hotspots clicáveis -->
+        <div class="imgService" data-popup="0"></div>
+        <div class="imgService" data-popup="1"></div>
+        <div class="imgService" data-popup="2"></div>
+        <div class="imgService" data-popup="3"></div>
+
+        <!-- Pop-ups -->
+        <div class="popUp">
+          <p>Serviço 1</p>
+          <p>esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição
+            do
+            serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve descrição do serviço 1 esta é uma breve
+            descrição do serviço 1</p>
+          <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+        </div>
+        <div class="popUp">
+          <p>Serviço 2</p>
+          <p>esta é uma breve descrição do serviço 2esta é uma breve descrição do serviço 2</p>
+          <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+        </div>
+        <div class="popUp">
+          <p>Serviço 3</p>
+          <p>esta é uma breve descrição do serviço 3</p>
+          <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+        </div>
+        <div class="popUp">
+          <p>Serviço 4</p>
+          <p>esta é uma breve descrição do serviço 4</p>
+          <img class="closeBtn" src="/src/assets/icons/closePopUp.svg" alt="X para sair do pop-up">
+        </div>
+      </div>
 
 
 
@@ -156,7 +196,6 @@
         </div>
 
         <div class="rack-component">
-          <h6>Clique nas imagens e veja mais sobre</h6>
           <div class="rack-container">
             <span data-popup="distribution" class="rack-button distribution"></span>
             <span data-popup="switch" class="rack-button switch"></span>
@@ -213,193 +252,224 @@
     </section>
 
     <!-- Service -->
+    <!-- links que são redirecionados da documentação técnica -->
+    <div id="linuxService" class="scrollLink"></div>
+    <div id="zabixService" class="scrollLink"></div>
+    <div id="siemService" class="scrollLink"></div>
+    <div id="arduinoService" class="scrollLink"></div>
 
-    <section class="service">
-      <div id="linuxService" class="scrollLink"></div>
-      <div id="ZabbixService" class="scrollLink"></div>
-      <div id="SplunkService" class="scrollLink"></div>
+    <section class="services-documentation">
+      <h2>Serviços</h2>
+      <!-- Serviço Linux -->
+      <div class="service-documentation">
+        <div class="dropdown">
+          <h3>Sistema Operacional – Linux</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
+        </div>
+        <div class="serviceContent">
+          <p>
+            Ambiente baseado em Linux para garantir alta estabilidade, segurança nativa, flexibilidade de configuração e
+            suporte robusto para serviços de monitoramento e segurança, oferecendo também escalabilidade para diferentes
+            cargas de trabalho, compatibilidade com diversas aplicações corporativas e ferramentas de automação que
+            simplificam a administração do servidor. Além disso, conta com atualizações contínuas da comunidade open
+            source, assegurando inovação constante e redução de custos operacionais.
+          </p>
+          <img src="/src/assets/images/linuxServiceRack5HeroImage.svg" alt="hero image do serviço linux"
+            loading="lazy" />
+          <a href="#linuxDoc">Veja a documentação técnica</a>
+        </div>
+      </div>
+      <!-- Serviço Zabix -->
+      <div class="service-documentation">
+        <div class="dropdown">
+          <h3>Monitoramento de Rede – Zabbix</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
+        </div>
+        <div class="serviceContent">
+          <p>
+            Zabbix é utilizado para monitorar disponibilidade, desempenho e métricas de rede em tempo real, com alertas
+            automáticos e dashboards para acompanhamento da infraestrutura. Além disso, oferece suporte a diversos
+            protocolos (como SNMP, IPMI e HTTP), coleta dados de servidores, aplicações e dispositivos de rede, e
+            permite integração com ferramentas externas para automação e resposta a incidentes. Sua arquitetura
+            escalável possibilita monitorar desde pequenos ambientes até grandes datacenters, garantindo visibilidade
+            completa e proativa da saúde da infraestrutura de TI.
+          </p>
+          <img src="/src/assets/images/zabixServiceRack5HeroImage.png" alt="hero image do serviço zabix"
+            loading="lazy" />
+          <a href="#zabixDoc">Veja a documentação técnica</a>
+        </div>
+      </div>
+      <!-- Serviço SIEM -->
+      <div class="service-documentation">
+        <div class="dropdown">
+          <h3>Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
+        </div>
+        <div class="serviceContent">
+          <p>
+            Wazuh realiza detecção de intrusão, análise de integridade, coleta de logs e eventos de segurança. Esses
+            dados são enviados ao Splunk, que faz correlação avançada, análise centralizada e visualização,
+            proporcionando uma visão completa de segurança em tempo real. Além disso, o Wazuh oferece recursos de
+            monitoramento de vulnerabilidades, análise de comportamento e resposta a incidentes, enquanto o Splunk
+            amplia a capacidade de investigação com machine learning e relatórios personalizados. Juntos, formam uma
+            solução integrada que garante maior visibilidade, automação e eficiência na gestão da segurança da
+            infraestrutura de TI.
+          </p>
+          <img src="/src/assets/images/siemServiceRack5HeroImage.svg"
+            alt="hero image do serviço de monitoramento de segurança" loading="lazy" />
 
-      <div class="services-document">
-        <h2>Serviços</h2>
-        <!-- Service 1 -->
-        <div class="service-document">
-          <div class="service-dropdown">
-            <h3>1. Sistema Operacional – Linux</h3>
-            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-          </div>
-          <div class="service-content">
-            <p>
-              Ambiente baseado em Linux para garantir alta estabilidade,
-              segurança nativa, flexibilidade de configuração e suporte
-              robusto para serviços de monitoramento e segurança.
-            </p>
-            <a href="#linuxDoc">Veja a documentação técnica</a>
-          </div>
+          <a href="#siemDoc">Veja a documentação técnica</a>
         </div>
-        <!-- Service 2 -->
-        <div class="service-document">
-          <div class="service-dropdown">
-            <h3>2. Monitoramento de Rede – Zabbix</h3>
-            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-          </div>
-          <div class="service-content">
-            <p>
-              Zabbix é utilizado para monitorar disponibilidade, desempenho e
-              métricas de rede em tempo real, com alertas automáticos e
-              dashboards para acompanhamento da infraestrutura.
-            </p>
-            <a href="#ZabbixDoc">Veja a documentação técnica</a>
-          </div>
+      </div>
+      <!-- Serviço Arduino -->
+      <div class="service-documentation">
+        <div class="dropdown">
+          <h3>Arduino</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
         </div>
-        <!-- Service 3 -->
-        <div class="service-document">
-          <div class="service-dropdown">
-            <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
-            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-          </div>
-          <div class="service-content">
-            <p>
-              Wazuh realiza detecção de intrusão, análise de integridade,
-              coleta de logs e eventos de segurança. Esses dados são enviados
-              ao Splunk, que faz correlação avançada, análise centralizada e
-              visualização, proporcionando uma visão completa de segurança em
-              tempo real.
-            </p>
-            <a href="#splunkDoc">Veja a documentação técnica</a>
-          </div>
+        <div class="serviceContent">
+          <p>
+            O Arduino será usado para monitoramento de umidade e temperatura é
+            um sistema embarcado desenvolvido para coletar e exibir dados
+            ambientais em tempo real. Utilizando sensores como o DHT11 ou DHT22,
+            o dispositivo mede a temperatura e a umidade do ambiente,
+            processando as informações por meio da placa Arduino. Esses dados
+            podem ser exibidos em um display, enviados para um servidor ou
+            integrados a sistemas de automação e IoT. O projeto oferece uma
+            solução acessível e eficiente para controle climático em
+            laboratórios, data centers ou ambientes industriais.
+          </p>
+          <img src="/src/assets/images/arduinoHeroImage.svg" alt="hero image do serviço arduíno" loading="lazy" />
+          <a href="#arduinoDoc">Veja a documentação técnica</a>
         </div>
       </div>
     </section>
+    <!-- links que são redirecionados pra documentação técnica -->
+    <div id="linuxDoc" class="scrollLink"></div>
+    <div id="zabixDoc" class="scrollLink"></div>
+    <div id="siemDoc" class="scrollLink"></div>
+    <div id="arduinoDoc" class="scrollLink"></div>
 
-    <!-- Documentação Técnica -->
-
-    <section class="document-tec">
-      <div id="linuxDoc" class="scrollLink"></div>
-      <div id="ZabbixDoc" class="scrollLink"></div>
-      <div id="SplunkDoc" class="scrollLink"></div>
-
-      <div class="services-document">
-        <h2>Documentação Técnica</h2>
-        <!-- Service 1 -->
-        <div class="service-document">
-          <div class="service-dropdown">
-            <h3>1. Sistema Operacional – Linux</h3>
-            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-          </div>
-          <div class="service-content">
-            <p>
-              O ambiente utiliza Linux como base por sua estabilidade,
-              segurança e flexibilidade. O sistema oferece um kernel robusto,
-              excelente gerenciamento de processos e um modelo de permissões
-              que reforça a proteção contra acessos indevidos. Sua
-              compatibilidade com ferramentas de monitoramento e segurança
-              permite integração eficiente com Zabbix, Wazuh e Splunk,
-              tornando o Linux ideal para compor uma infraestrutura confiável
-              e escalável.
-            </p>
-            <a href="#linuxService">Veja o Serviço</a>
-          </div>
+    <section class="services-documentation">
+      <h2>Documentação Técnica</h2>
+      <!-- Documentação Linux -->
+      <div class="service-documentation">
+        <div class="dropdown">
+          <h3>Sistema Operacional – Linux</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
         </div>
-        <!-- Service 2 -->
-        <div class="service-document">
-          <div class="service-dropdown">
-            <h3>2. Monitoramento de Rede – Zabbix</h3>
-            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-          </div>
-          <div class="service-content">
-            <p>
-              O Zabbix realiza o monitoramento da rede em tempo real,
-              coletando métricas como uso de CPU, memória, tráfego e
-              disponibilidade de serviços por meio de agentes, SNMP e outras
-              interfaces. A ferramenta identifica anomalias com triggers
-              configuráveis e emite alertas automáticos, permitindo ações
-              rápidas antes de falhas. Seus dashboards facilitam a
-              visualização do estado da infraestrutura, garantindo
-              acompanhamento contínuo e preciso."
-            </p>
-            <a href="#ZabbixService">Veja o Serviço</a>
-          </div>
+        <div class="serviceContent">
+          <p>
+            O ambiente utiliza Linux como base por sua estabilidade,
+            segurança e flexibilidade. O sistema oferece um kernel robusto,
+            excelente gerenciamento de processos e um modelo de permissões
+            que reforça a proteção contra acessos indevidos. Sua
+            compatibilidade com ferramentas de monitoramento e segurança
+            permite integração eficiente com Zabbix, Wazuh e Splunk,
+            tornando o Linux ideal para compor uma infraestrutura confiável
+            e escalável.
+          </p>
+          <a href="#linuxService">Veja o serviço</a>
         </div>
-        <!-- Service 3 -->
-        <div class="service-document">
-          <div class="service-dropdown">
-            <h3>3. Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
-            <img class="icon-open" src="../../assets/icons/arrowDownRack3.svg" alt="arrow down icon" />
-            <img class="icon-closed" src="../../assets/icons/arrowUpRack3.svg" alt="arrow up icon" />
-          </div>
-          <div class="service-content">
-            <p>
-              A segurança é tratada pela integração entre Wazuh e Splunk. O
-              Wazuh coleta logs, detecta intrusões, monitora integridade e
-              identifica vulnerabilidades. Esses dados são enviados ao Splunk,
-              que os analisa e correlaciona para identificar padrões suspeitos
-              e possíveis incidentes. A combinação das duas ferramentas
-              oferece uma visão centralizada e detalhada da postura de
-              segurança, permitindo respostas mais rápidas e eficazes a
-              ameaças.
-            </p>
-            <a href="#SplunkService">Veja o Serviço</a>
-          </div>
+        <!-- Documentação Zabix -->
+        <div class="dropdown">
+          <h3>Monitoramento de Rede – Zabbix</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
+        </div>
+        <div class="serviceContent">
+          <p>
+            O Zabbix realiza o monitoramento da rede em tempo real,
+            coletando métricas como uso de CPU, memória, tráfego e
+            disponibilidade de serviços por meio de agentes, SNMP e outras
+            interfaces. A ferramenta identifica anomalias com triggers
+            configuráveis e emite alertas automáticos, permitindo ações
+            rápidas antes de falhas. Seus dashboards facilitam a
+            visualização do estado da infraestrutura, garantindo
+            acompanhamento contínuo e preciso."
+          </p>
+          <a href="#zabixService">Veja o serviço</a>
+        </div>
+        <!-- Documentação SIEM -->
+        <div id="arduinoDoc"></div>
+        <div class="dropdown">
+          <h3>Monitoramento de Segurança (SIEM) – Splunk + Wazuh</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
+        </div>
+        <div class="serviceContent">
+          <p>
+            A segurança é tratada pela integração entre Wazuh e Splunk. O
+            Wazuh coleta logs, detecta intrusões, monitora integridade e
+            identifica vulnerabilidades. Esses dados são enviados ao Splunk,
+            que os analisa e correlaciona para identificar padrões suspeitos
+            e possíveis incidentes. A combinação das duas ferramentas
+            oferece uma visão centralizada e detalhada da postura de
+            segurança, permitindo respostas mais rápidas e eficazes a
+            ameaças.
+          </p>
+          <a href="#siemService">Veja o serviço</a>
+        </div>
+        <!-- Documentação Arduino -->
+        <div class="dropdown">
+          <h3>Arduíno</h3>
+          <img class="block" src="/src/assets/icons/arrowDownRack3.svg" alt="arrow down icon" loading="lazy" />
+          <img class="none" src="/src/assets/icons/arrowUpRack3.svg" alt="arrow up icon" loading="lazy" />
+        </div>
+        <div class="serviceContent">
+          <p>
+            Definição: Plataforma de prototipagem eletrônica baseada em hardware
+            e software livres. Arquitetura: Placas: Arduino Uno, Mega, Nano,
+            entre outras. Microcontrolador: Geralmente da família AVR
+            (ATmega328, ATmega2560). IDE: Ambiente de desenvolvimento com
+            linguagem baseada em C/C++. Funcionalidades: Leitura de sensores
+            (analógicos e digitais). Controle de atuadores (motores, LEDs,
+            relés). Comunicação serial, I2C, SPI. Integração com IoT via Wi-Fi,
+            Bluetooth ou LoRa. Casos de uso: Automação residencial,
+            monitoramento ambiental, protótipos de robótica, sistemas de IoT.
+          </p>
+          <a href="#arduinoService">Veja o serviço</a>
         </div>
       </div>
     </section>
   </main>
 
-  <div id="footer" class="scrollLink"></div>
-  <footer class="site-footer">
-    <div class="footer-columns">
-      <div class="footer-group footer-group--links">
-        <ul class="footer-links">
-          <li>
-            <a class="footer-back-to-top" href="#rack5-top" aria-label="Voltar para o topo da página">Voltar ao topo</a>
-          </li>
-          <li><a href="#">Rack5</a></li>
+  <footer id="footer" class="scrollLink">
+    <div class="backInPage">
+      <h2>Voltar na Página</h2>
+      <nav>
+        <ul>
+          <li><a href="#topo">Topo</a></li>
           <li><a href="#linuxService">Serviços</a></li>
           <li><a href="#linuxDoc">Documentação Técnica</a></li>
         </ul>
-      </div>
-
-      <div class="footer-group footer-group--contacts">
-        <h2 class="footer-title">Contatos</h2>
-        <ul class="social">
-          <li>
-            <a target="_blank" href="https://github.com/professor-correa/campus-datacenter-explorer"
-              aria-label="GitHub"><img src="../../assets/icons/footer-github-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.instagram.com/senai.suico/" aria-label="Instagram"><img
-                src="../../assets/icons/footer-instagram-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a target="_blank"
-              href="https://www.figma.com/design/LOPdanvag4cYtjxpLDYfoK/DataCenter---Design-System?node-id=1-3&m=dev"
-              aria-label="Figma"><img src="../../assets/icons/footer-figma-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/school/senaisp-suico/posts/?feedView=all"
-              aria-label="LinkedIn"><img src="../../assets/icons/footer-linkedin-icon.svg" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-group footer-group--access">
-        <h2 class="footer-title">Acesse Também</h2>
-        <div class="access-links">
-          <p>
-            <a href="https://www.sp.senai.br/" target="_blank" rel="noopener">SENAI Suíço Brasileira</a>
-          </p>
+      </nav>
+    </div>
+    <div class="contact">
+      <nav class="contatos">
+        <h3>Contatos</h3>
+        <div class="socialMedias">
+          <a href="https://github.com/professor-correa/campus-datacenter-explorer" target="_blank"><img
+              src="/src/assets/icons/githubRack3.svg" alt="logo do github" loading="lazy" /></a>
+          <a href="https://www.instagram.com/senai.suico?igsh=NjcxZ3h2cDY5c3Vu" target="_blank"><img
+              src="/src/assets/icons/instagramRack3.svg" alt="logo do instagram" loading="lazy" /></a>
+          <a href="https://www.figma.com/design/LOPdanvag4cYtjxpLDYfoK/DataCenter---Design-System?node-id=1-3&t=sdteNx2KuhpGrY22-1"
+            target="_blank"><img src="/src/assets/icons/figmaRack3.svg" alt="logo do figma" loading="lazy" /></a>
+          <a href="https://www.linkedin.com/school/senaisp-suico/" target="_blank"><img
+              src="/src/assets/icons/linkedinRack3.svg" alt="logo do linkedin" loading="lazy" /></a>
         </div>
+      </nav>
+      <div class="acesseTambem">
+        <h4>Acesse Também</h4>
+        <a href="https://sp.senai.br/unidade/suicobrasileira/" target="_blank">Senai suiço-brasileira</a>
       </div>
     </div>
   </footer>
-  <script src="./js/dropdown.js"></script>
-  <script src="./js/header.js"></script>
-  <script src="./js/popupScript.js"></script>
 </body>
 
 </html>
